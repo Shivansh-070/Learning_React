@@ -57,3 +57,8 @@
     padding: 2px;
     
 }
+
+.cuisines{
+    display: flex;
+    flex-wrap: wrap;
+}
