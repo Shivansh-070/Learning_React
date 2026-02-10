@@ -27,3 +27,27 @@
 
 # config driven UI
    -a design pattern where the user interface structure, layout, and behavior are defined by external configuration files (usually JSON or YAML) rather than hard-coded
+
+# we must keep key unique for each component render because
+React does not re-render the whole list every time.
+It uses a process called reconciliation (diffing the virtual DOM).
+
+# What is the Virtual DOM?
+
+The Virtual DOM is a lightweight JavaScript object that represents what the UI should look like.
+
+# What is reconciliation? (core idea)
+Creates a new Virtual DOM
+
+Compares it with the previous Virtual DOM
+
+Figures out the minimum changes needed
+
+Updates only those parts in the real DOM
+
+This comparison step is often called diffing.
+Same element type (h1)
+
+Text changed
+
+👉 Update only the text node, not the whole page.
